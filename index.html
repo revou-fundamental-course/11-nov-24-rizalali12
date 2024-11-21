@@ -3,8 +3,166 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Mini Project</title>
     <link rel="stylesheet" href="CSS\styles.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="main-header">
+      <div class="main-logo"></div>
+
+      <nav>
+        <a class="navbar" href="#home">Home</a>
+        <a class="navbar" href="#our-package">Our Package</a>
+        <a class="navbar" href="#contact-us">Call Us</a>
+      </nav>
+    </header>
+    <hr />
+    <main>
+      <header class="main-article-header" id="home">
+        <h1>Your Trusted Travel Agent</h1>
+        <h3>Your hapiness is our hapiness</h3>
+      </header>
+
+      <!-- Konten Banner Autoslide -->
+      <article class="main-article">
+        <section>
+          <div class="main-article-banner" id="banner"></div>
+          <p class="info-banner">"Liburan jadi menyenangkan bersama Travel Agentku"</p>
+          <div class="container-mini-profile">
+            <div class="photo-profile">
+              <img src="Img\286d1066ed7c0e828dc6f11a304914b3.jpg" alt="photo" />
+            </div>
+            <div class="profile-info">
+              Florence Hughes
+              <span>Ibu Rumah Tangga,28</span>
+            </div>
+          </div>
+          <div class="main-short-line"></div>
+
+          <!-- Konten feedback -->
+           <!-- feedback profile pertama -->
+          <div class="container-feedback">
+            <h1>
+              Use this space to provide users with more information about your
+              offer. Consider it a follow-up to your headline and explain the
+              benefits of your service or product
+            </h1>
+            <div class="container-mini-profile">
+              <div class="photo-profile">
+                <div class="profile-circle"></div>
+              </div>
+              <div class="profile-feedback">
+                <span>Your first feature, wirtten in the 
+                  form of a benefit statement
+                </span>
+              </div>
+            </div>
+            <!-- feedback profile kedua -->
+            <div class="container-mini-profile">
+              <div class="photo-profile">
+                <div class="profile-circle"></div>
+              </div>
+              <div class="profile-feedback">
+                <span>Your second feature, wirtten in the 
+                  form of a benefit statement
+                </span>
+              </div>
+            </div>
+            <!-- feedback profile ketiga -->
+            <div class="container-mini-profile">
+              <div class="photo-profile">
+                <div class="profile-circle"></div>
+              </div>
+              <div class="profile-feedback">
+                <span>Your thirth feature, wirtten in the 
+                  form of a benefit statement
+                </span>
+              </div>
+            </div>
+        </section>
+
+        <!-- Form contact us -->
+        <div class="main-contact-us" id="contact-us">
+          <form class="main-section-form" onsubmit="handleSubmit(event)">
+            <h1>Form Contact Us</h1>
+            <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
+            <section class="section-tabel">
+              <label>Your Name:</label>
+              <input type="text" placeholder="First and last name" id="name" />
+
+              <label>Email Address:</label>
+              <input type="text" placeholder="example@email.com" id="email"/>
+
+              <label>What are you interested in?</label>
+              <select name="liburan" id="liburan">
+                <option value= ""disabled selected>Select an option</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Vietnam">Vietnam</option>
+                <option value="Indonesia">Indonesia</option>
+              </select>
+            </section>
+            <button type="submit" id="submit">SEND</button>
+            <p id="error-msg"></p>
+          </form>
+        </div>
+      </article>
+
+      <!-- Konten Our Package -->
+       
+      <article class="main-our-package" id="our-package">
+        <header class="header-our-package">
+          <h1>Our Package</h1>
+        </header>        
+      </article>
+
+      <!-- konten our package baris pertama -->
+      <section class="main-section-our-package">
+        <div class="featured-package">
+          <div class="icon"></div>
+          <h3>BALI</h3>
+          <p>Travel dan wisata di Bali. Kunjungi cagar budaya
+            dan kuliner yang menarik</p>
+        </div>
+
+        <div class="featured-package">
+          <div class="icon"></div>
+          <h3>JAPAN</h3>
+          <p>Travel dan wisata di Japan. Kunjungi cagar dan
+            kuliner yang menarik
+          </p>
+        </div>
+
+        <div class="featured-package">
+          <div class="icon"></div>
+          <h3>THAILAND</h3>
+          <p>This description supports and extends the bullet point above.</p>
+        </div>
+      </section>
+      <div class="short-line"></div>
+      <section class="second-section-our-package">
+        <div class="featured-package">
+          <div class="icon"></div>
+          <h3>BANDUNG</h3>
+          <p>This description supports and extends the bullet point above.</p>
+        </div>
+        <div class="featured-package">
+          <div class="icon"></div>
+          <h3>SURABAYA</h3>
+          <p>This description supports and extends the bullet point above.</p>
+        </div>
+        <div class="featured-package">
+          <div class="icon"></div>
+          <h3>JAKARTA</h3>
+          <p>This description supports and extends the bullet point above.</p>
+        </div>
+
+      </section>
+    </main>
+    <footer>
+      <span>Made by Rizal 2024</span>
+    </footer>
+    <script src="JS\script.js"></script>
+  </body>
 </html>
